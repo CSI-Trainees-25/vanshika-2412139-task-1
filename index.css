@@ -1,0 +1,155 @@
+/* ---------- Base Theme ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0d1b2a;        /* deep navy */
+  color: #e0e6ed;
+  line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: #1b263b;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-oval {
+  font-size: 1.8rem;
+  font-weight: 800;
+  padding: 8px 20px;
+  border: 2px solid #7dcfb6;
+  border-radius: 50px;
+  color: #7dcfb6;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #e0e6ed;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #7dcfb6;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px;
+}
+
+.hero .discover {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  color: #7dcfb6;
+}
+
+.hero .subhead {
+  font-size: 1.1rem;
+  color: #9eb3c2;
+}
+
+/* ---------- Landing Image ---------- */
+.landing-image img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+/* ---------- Carousel ---------- */
+.carousel {
+  margin: 60px auto;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.carousel h2 {
+  margin-bottom: 20px;
+  color: #7dcfb6;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  transition: all 0.6s ease;
+}
+
+.slide {
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(11, 27, 42, 0.8);
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #e0e6ed;
+  font-weight: 600;
+}
+
+/* Hide default radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* Manual Navigation */
+.navigation-manual {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.manual-btn {
+  border: 2px solid #7dcfb6;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin: 0 5px;
+}
+
+.manual-btn:hover {
+  background: #7dcfb6;
+}
+
+/* ---------- Testimonials ---------- */
+.testimonials {
+  padding: 60px 20px;
+  background: #1b263b;
+  text-align: center;
+}
+
+.testimonials h2 {
+  margin-botto
